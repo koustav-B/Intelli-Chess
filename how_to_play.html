@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Play Intelli Chess</title>
+    <link rel="shortcut icon" href="./images/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <style>
+        /* Reset some basic styles */
+        body, h1, p {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Starry background */
+        body {
+            font-family: 'Raleway', sans-serif;
+            background: linear-gradient(135deg, #2c3e50, #4ca1af);
+            color: #fff;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+            padding: 20px;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/stardust.png') repeat;
+            opacity: 0.5;
+            z-index: 0;
+        }
+
+        .wrapper {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+            color: #fff;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            z-index: 1;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .header {
+            font-size: 2.5em;
+            color: #fff;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .paragraph {
+            font-size: 1.2em;
+            color: #ddd;
+            margin-bottom: 20px;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        .paragraph a {
+            color: #00aaff;
+            text-decoration: none;
+            transition: color 0.3s, text-shadow 0.3s;
+        }
+
+        .paragraph a:hover {
+            color: #005f99;
+            text-shadow: 0 0 5px rgba(0, 170, 255, 0.8);
+        }
+
+        .italic {
+            font-style: italic;
+            color: #aaa;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 10px;
+            left: 20px;
+            font-size: 0.9em;
+            color: #aaa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+        }
+
+        .footer img {
+            height: 20px;
+            margin-left: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .wrapper {
+                margin: 10px;
+                padding: 20px;
+            }
+
+            .header {
+                font-size: 1.8em;
+            }
+
+            .paragraph {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="paragraph_wrapper">
+            <h1 class="header">How to Use Intelli Chess</h1>
+            <p class="paragraph">Hello, challenger! Welcome to this majestic realm. You are the white player,
+                and your opponent is the black player (a rather unsociable bot). To play, click on the piece you want to move,
+                and then click on the desired destination.</p>
+            <p class="paragraph">Intelli Chess makes chess easy for novice players; when you select a piece, the game
+                highlights valid destinations. You can also view previous moves by clicking on the arrow buttons, and you
+                can even reset the game. But keep in mind that only a weakling would retreat!</p>
+        </div>
+        <div>
+            <h1 class="header">Rules of Chess</h1>
+            <p class="paragraph">Don't be a barbarian—learn the rules of chess! Visit
+                <a href="https://en.wikipedia.org/wiki/Rules_of_chess" target="_blank">this link</a>
+                to do just that. Intelli Chess implements all of these rules, except for draws (other than stalemate),
+                resigning, and time limits.</p>
+        </div>
+        <p class="paragraph italic">Hope you enjoy playing!</p>
+    </div>
+    <footer class="footer">
+        <p>Made in <img src="./images/react.png" alt="React"> by Koustav Biswas.</p>
+    </footer>
+</body>
+
+</html>

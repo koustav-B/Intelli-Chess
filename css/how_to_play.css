@@ -1,0 +1,111 @@
+/* Global Styles */
+body,
+html,
+footer {
+  background-color: #ebedef;
+  color: #242424;
+  font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: block;
+  margin: 0 auto;
+  max-width: 90%;
+  padding: 5px 15px 80px;
+}
+
+/* Header Styles */
+.header {
+  color: #00a494;
+  font-size: 2.8em;
+  line-height: 1.2;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.paragraph {
+  font-size: 1.6em;
+  line-height: 1.4;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+/* Anchor Styles */
+a {
+  color: #00a494;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover,
+a:active {
+  color: #242424;
+}
+
+a:visited {
+  color: #007c7a;
+}
+
+/* Footer Styles */
+.footer {
+  position: fixed;
+  width: 100%;
+  background: #242424;
+  color: white;
+  text-align: center;
+  font-size: 1.3em;
+  bottom: 0;
+  left: 0;
+  padding: 10px 0;
+}
+
+.footer_img {
+  height: 20px;
+  width: auto;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    padding-left: 4%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .header {
+    font-size: 2.4em;
+  }
+
+  .paragraph {
+    font-size: 1.4em;
+  }
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.p-5 {
+  padding: 5px;
+}
+
+.p-15 {
+  padding: 15px;
+}
